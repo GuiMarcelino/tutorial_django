@@ -20,5 +20,5 @@ from site_receitas.views import index, receita
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index, name='index'),
-    path('/receita',receita, name='receita')
+    path('<int>:receita_id',receita, name='receita')
 ]
