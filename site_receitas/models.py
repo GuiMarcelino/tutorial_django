@@ -11,3 +11,6 @@ class Receita(models.Model):
     ingredientes = models.TextField()
     data_receita = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.nome_receita
+
